@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 7000px;
+}
+
+.body-cont {
+  max-width: 1200px;
+  /* border: 2px solid red; */
+  margin: 0 auto
+}
+
+.top-nav {
+  border: 2px solid green;
+  height: 30px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border: 2px solid blue;
+}
+
+.nav-inner {
+  background-color: red;
+  container-type: scroll-state;
+}
+
+@container scroll-state(struck:top) {
+  .nav-inner {
+    background-color: blue;
+  }
+}
+
